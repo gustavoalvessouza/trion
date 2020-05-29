@@ -1,0 +1,8 @@
+.badge-orange {
+    background-color: rgb(253, 116, 0) !important;
+}
+
+.badge-white {
+    background-color: white !important;
+    color: gray;
+}

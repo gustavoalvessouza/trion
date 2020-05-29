@@ -1,0 +1,16 @@
+.card {
+    background-color: rgb(216, 216, 216) !important;
+    border: none !important;
+}
+
+.card-alert {
+    border-radius: 80px;
+    color: gray;
+}
+
+.card-alert:hover {
+    background-color: rgb(253, 116, 0) !important;
+    color: white;
+    transition: 0.1s;
+    cursor: default;
+}

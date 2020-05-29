@@ -1,0 +1,23 @@
+.progress-bar {
+    width: 100% !important;
+    background-color: rgb(201, 63, 101) !important;
+}
+
+.progress-title {
+    background-color: rgb(201, 63, 101);
+    width: 375px;
+    top: 0px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.progress-info {
+    position: absolute;
+    top: 100px;
+    margin-left: 100px;
+}

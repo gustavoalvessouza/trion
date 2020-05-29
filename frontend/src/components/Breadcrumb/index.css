@@ -1,0 +1,8 @@
+.breadcrumb-categorias {
+    display: flex;
+    flex-direction: row;
+}
+
+.breadcrumb-categorias .breadcrumb-categorias-items {
+    list-style-type: none !important;
+}
