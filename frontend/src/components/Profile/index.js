@@ -11,7 +11,7 @@ export default props =>
                 src={avatar}
                 width={170}
                 className="profile-picture"
-                alt="Profile Picture"
+                alt="Profile"
             />
         </div>
 
