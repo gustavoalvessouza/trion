@@ -13,5 +13,5 @@ server.use(bodyParser.urlencoded({ extended: true }))
 server.use(router)
 
 server.listen(PORT, () => {
-    console.log(`Servidor rodando na porta: ${PORT}`)
+    console.log(`> Servidor rodando na porta: ${PORT}`)
 })

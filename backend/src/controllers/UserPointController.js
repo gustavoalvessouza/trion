@@ -28,4 +28,4 @@ class UserPointController {
   }
 }
 
-module.exports = new UserPointController()
+module.exports = new UserPointController();

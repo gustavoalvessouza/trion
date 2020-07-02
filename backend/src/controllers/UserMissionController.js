@@ -26,5 +26,5 @@ class UserMissionController {
    }
 }
 
-module.exports = new UserMissionController()
+module.exports = new UserMissionController();
 

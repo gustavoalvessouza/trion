@@ -83,4 +83,4 @@ class MissionController {
     }
 }
 
-module.exports = new MissionController()
+module.exports = new MissionController();
