@@ -1,0 +1,66 @@
+.page-login {
+    width: 50%;
+    max-width: 1100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+form h1 {
+    color: #707070;
+    margin-right: 410px;
+}
+
+form .field1 {
+    margin-bottom: 10px;
+}
+
+form a.forgotPassword {
+    margin-top: 10px;
+    margin-left: 340px;
+    color: #6A6A6A;
+    text-decoration: none;
+}
+
+form a {
+    color: inherit;
+}
+
+form .bt1 button {
+    margin-bottom: -20px;
+    background-color: #B2CB41;
+}
+
+form .bt1 button:hover {
+    transition: background 0.3s;
+    background-color: #BDE19B;
+    cursor: pointer;
+}
+
+form .bt2 button {
+    background-color: #6D6D6D;
+    color: white;
+}
+
+form .bt2 button:hover {
+    transition: background 0.3s;
+    background-color: #AAAAAA;
+    cursor: pointer;
+}
+
+form button {
+    font-weight: bold;
+    border-radius: 20px;
+    border: 0px;
+    color: white;
+    font-size: 25px;
+    width: 190px;
+    height: 50px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    position: center;
+    transition: 400ms;
+    transition: background 400ms;
+}

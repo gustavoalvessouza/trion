@@ -1,0 +1,48 @@
+main {
+    text-align: center;
+}
+
+.page-home header {
+    padding-top: 12px;
+    padding-left: 20px;
+}
+
+body {
+    background-color: white;
+}
+
+.page-home main, .img trion {
+    margin-top: 70px;
+}
+
+textarea:focus, button:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.page-home main button:hover {
+    transition: background 0.3s;
+    background-color: #BDE19B;
+    cursor: pointer;
+}
+
+.page-home main button {
+    font-weight: bold;
+    background-color: #B2CB41;
+    border-radius: 20px;
+    border: 0px;
+    color: white;
+    font-size: 25px;
+    width: 190px;
+    height: 50px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    position: center;
+    transition: background 400ms;
+}
+
+.page-home main p {
+    font-weight: normal;
+    color: #707070;
+    font-size: 28px;
+}

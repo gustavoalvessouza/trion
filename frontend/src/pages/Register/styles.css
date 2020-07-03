@@ -1,0 +1,97 @@
+header {
+    padding-top: -100px;
+    padding-left: 1260px;
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+
+header .home {
+    width: 40px;
+}
+
+.page-register {
+    width: 50%;
+    max-width: 1100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+form h1 {
+    color: #707070;
+    margin-right: 410px;
+}
+
+form .field1 {
+    margin-bottom: 10px;
+}
+
+form .field2 {
+    margin-bottom: 10px;
+}
+
+form .field3 {
+    margin-bottom: 10px;
+}
+
+form .field4 {
+    margin-bottom: 10px;
+}
+
+form .field5 {
+    margin-bottom: 10px;
+}
+
+form input[type=radio] {
+    border: 0px;
+    width: 25px;
+    height: 25px;
+}
+
+form input[value=M] {
+    align-items: center;
+    display: flex;
+}
+
+form .selection {
+    vertical-align: middle;
+    margin-top: 20px;
+    display: flex;
+}
+
+form .sl1 {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+form .sl1 {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+form button:hover {
+    transition: background 0.3s;
+    background-color: #BDE19B;
+    cursor: pointer;
+}
+
+form button {
+    font-weight: bold;
+    background-color: #B2CB41;
+    border-radius: 20px;
+    border: 0px;
+    color: white;
+    font-size: 25px;
+    width: 190px;
+    height: 50px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    position: center;
+    margin-left: 180px;
+    transition: background 400ms;
+}

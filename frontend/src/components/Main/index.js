@@ -13,7 +13,7 @@ import { Link, BrowserRouter } from 'react-router-dom'
 export default function Main() {
     return (
         <>
-            <BrowserRouter>
+            {/* <BrowserRouter>
                 <div className="topnav" id="myTopnav">
                     <img src={trion} alt="trion" width={90} style={{ marginRight: '30px' }} />
                     <img src={satc} alt="trion" width={90} />
@@ -24,7 +24,7 @@ export default function Main() {
                     <Link to="/conquistas" style={{ backgroundColor: 'rgb(178, 203, 65)' }}>Conquistas</Link>
                     <Link to="/missoes" style={{ backgroundColor: 'rgb(74, 177, 152)' }}>Missões</Link>
                 </div>
-            </BrowserRouter>
+            </BrowserRouter> */}
 
             <Routes />
         </>
