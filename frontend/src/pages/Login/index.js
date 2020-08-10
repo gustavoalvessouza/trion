@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+
 import logoTrion from '../../assets/images/trion.png'
 import logoSATC from '../../assets/images/satc.png'
 
@@ -10,6 +13,8 @@ import '../../styles/css/configuration.css'
 export default function Login() {
     return (
         <>
+            <ToastContainer autoClose={3000} />
+
             <div className="page-login">
                 <form>
 
@@ -38,8 +43,8 @@ export default function Login() {
                         <Link className="forgotPassword" to="/recoveryPass">Esqueci minha senha</Link>
 
                         <div className="bt1">
-                            <Link to="/home">
-                                <button>Entrar</button>
+                            <Link>
+                                <button onClick={() => toast.success('Login efetuado com sucesso!')}>Entrar</button>
                             </Link>
                         </div>
 

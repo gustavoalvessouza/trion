@@ -41,7 +41,11 @@ const UserSchema = new Schema({
     pontos: {
         type: Number,
         default: 1
-    }
+    },
+    accountType: {
+        type: String,
+        default: 'Aluno'
+    },
 });
 
 module.export = mongoose.model('users', UserSchema);
