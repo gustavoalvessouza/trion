@@ -1,41 +1,50 @@
+.lostPassword {
+    background-color: #e6e6e6;
+}
+
 header {
-    padding-top: -100px;
-    padding-left: 1260px;
+    padding-left: 94%;
     display: flex;
     position: absolute;
     top: 0;
 }
 
-header .home {
-    width: 40px;
-}
-
 .page-lostPassword {
-    width: 50%;
+    width: 1000%;
     max-width: 1100px;
-    height: 100%;
+    height: 730px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
 }
 
-form h1 {
+form h1 {   
     color: #707070;
     width: 300px;
     height: 50px;
     display: flex;
     flex-wrap: rap;
     margin-bottom: -5px;
+    margin-top: 10px;
+}
+
+form .field {
+    margin-top: 30px;
 }
 
 form p {
     color: #6A6A6A;
-    padding-left: 130px;
+    padding-left: 120px;
+    padding-top: 10px ;
 }
 
 form a {
     color: inherit;
+}
+
+form .bt {
+  margin-left: -15px;
 }
 
 form .bt1 button {

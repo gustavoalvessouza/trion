@@ -11,53 +11,59 @@ import '../../styles/css/configuration.css'
 
 export default function RecoveryPassword() {
     return (
-        <>
-            <header>
-        <Link className="home" to="/home">
-            <img src={home} alt="ícone" width="30px" height="30px" />
-        </Link>
+        <div className="lostPassword">
+            <>
+                <header>
+                    <Link className="home" to="/home">
+                        <img src={home} alt="ícone" width="30px" height="30px" />
+                    </Link>
 
-        <Link className="comeBack" to="/login">
-            <img src={voltar} alt="ícone" width="30px" height="30px" />
-        </Link>
-    </header>
+                    <Link className="comeBack" to="/login">
+                        <img src={voltar} alt="ícone" width="30px" height="30px" />
+                    </Link>
+                </header>
 
-    <div className="page-lostPassword">
+                <div className="page-lostPassword">
 
-        <form>
+                    <form>
 
-            <fieldset>
+                        <fieldset>
 
-                <div className="img2">
-                    <div className="lg">
-                        <img src={logoTrion} alt="Logo marca" width="210px" height="90px" />
-                    </div>
-                    <div className="lg">
-                        <img src={logoSATC} alt="Logo marca" width="210px" height="90px" />
-                    </div>
+                            <div className="img2">
+                                <div className="lg1">
+                                    <img src={logoTrion} alt="Logo marca" width="210px" height="90px" />
+                                </div>
+                                <div className="lg2">
+                                    <img src={logoSATC} alt="Logo marca" width="210px" height="90px" />
+                                </div>
+                            </div>
+
+                            <h1>Recuperar senha</h1>
+
+                            <div className="field">
+                                <input type="text" name="email" placeholder="E-mail" />
+                            </div>
+
+                            <p>Em breve sua senha estará disponível em seu e-mail</p>
+
+                            <div className="bt">
+                                <div className="bt1">
+                                    <button type="submit">Enviar</button>
+                                </div>
+
+                                <div className="bt2">
+                                    <Link to="/register">
+                                        <button type="submit">Cadastro</button>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                    </form>
+
                 </div>
-
-                <h1>Recuperar senha</h1>
-
-                <input type="text" name="email" placeholder="E-mail" />
-
-                <p>Em breve sua senha estará disponível em seu e-mail</p>
-
-                <div className="bt1">
-                    <button type="submit">Enviar</button>
-                </div>
-
-                <div className="bt2">
-                    <button type="submit">
-                            Cadastro
-                    </button>
-                </div>
-
-            </fieldset>
-
-        </form>
-
-    </div>
-        </>
+            </>
+        </div >
     )
 }

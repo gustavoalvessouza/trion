@@ -6,6 +6,9 @@ const QuestionController = require('./controllers/QuestionController')
 const UserController = require('./controllers/UserController')
 const UserMissionController = require('./controllers/UserMissionController')
 const UserPointController = require('./controllers/UserPointController')
+const SessionController = require('./controllers/SessionController')
+
+router.post('/sessions', SessionController.store)
 
 router.get('/missions', MissionController.index)
 router.post('/mission/create', MissionController.store)

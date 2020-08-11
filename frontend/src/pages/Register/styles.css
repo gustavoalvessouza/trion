@@ -1,16 +1,20 @@
+.register {
+    background-color: #e6e6e6;
+}
+
 header {
-    padding-top: -100px;
-    padding-left: 1260px;
+    padding-left: 94%;
     display: flex;
     position: absolute;
     top: 0;
+    margin-top: 10px;
 }
 
 header .home {
     width: 40px;
 }
 
-.page-register {
+.page-register {    
     width: 50%;
     max-width: 1100px;
     height: 100%;
@@ -20,9 +24,18 @@ header .home {
     margin: 0 auto;
 }
 
+form {
+    align-items: center;
+    width: 1000px;
+}
+
 form h1 {
     color: #707070;
     margin-right: 410px;
+}
+
+form .fields {
+    margin-top: 20  px;
 }
 
 form .field1 {
@@ -47,7 +60,7 @@ form .field5 {
 
 form input[type=radio] {
     border: 0px;
-    width: 25px;
+    width: 35px;
     height: 25px;
 }
 
@@ -78,6 +91,12 @@ form button:hover {
     transition: background 0.3s;
     background-color: #BDE19B;
     cursor: pointer;
+}
+
+form .bt {
+    margin-left: -15px;
+    margin-top: -30px;
+    margin-bottom: -10px;
 }
 
 form button {

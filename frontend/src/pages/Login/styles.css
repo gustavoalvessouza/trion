@@ -1,17 +1,30 @@
+.login {
+    background-color: #e6e6e6;
+}
+
 .page-login {
     width: 50%;
-    max-width: 1100px;
-    height: 100%;
+    max-width: 1100%;
+    height: 50%;
     display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto; 
+}
+
+form {
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    width: 1000px;
 }
 
 form h1 {
     color: #707070;
     margin-right: 410px;
 }
+
+ form .fields {
+     margin-top: 20px;
+ }
 
 form .field1 {
     margin-bottom: 10px;
@@ -28,6 +41,14 @@ form a {
     color: inherit;
 }
 
+form .forgotPassword {
+    width: 160px;
+}
+
+form .bt {
+    margin-left: -15px;
+}
+
 form .bt1 button {
     margin-bottom: -20px;
     background-color: #B2CB41;
@@ -36,7 +57,6 @@ form .bt1 button {
 form .bt1 button:hover {
     transition: background 0.3s;
     background-color: #BDE19B;
-    cursor: pointer;
 }
 
 form .bt2 button {
@@ -56,7 +76,7 @@ form button {
     border: 0px;
     color: white;
     font-size: 25px;
-    width: 190px;
+    width: 10px;
     height: 50px;
     margin-bottom: 40px;
     margin-top: 60px;
