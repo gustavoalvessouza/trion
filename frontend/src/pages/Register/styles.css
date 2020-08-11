@@ -2,6 +2,11 @@
     background-color: #e6e6e6;
 }
 
+select {
+    padding: 8px;
+    cursor: pointer;
+}
+
 header {
     padding-left: 94%;
     display: flex;

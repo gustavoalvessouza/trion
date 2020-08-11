@@ -20,7 +20,7 @@ export default function Login(props) {
     async function signIn() {
         const response = await api.post('sessions', { email, senha })
 
-        localStorage.setItem('username', response.data.user.nome)
+        localStorage.setItem('userNome', response.data.user.nome)
         localStorage.setItem('userEmail', response.data.user.email)
         localStorage.setItem('userFraqueza', response.data.user.fraqueza)
         localStorage.setItem('userHabilidade', response.data.user.habilidade)
@@ -30,7 +30,9 @@ export default function Login(props) {
 
         toast.success('Login efetuado com sucesso!')
 
-        props.history.push('/')
+        setTimeout(() => {
+            props.history.push('/')
+        }, 2000);
     }
 
     return (
