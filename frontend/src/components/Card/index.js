@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { returnMenuComponent } from '../../utils/returnMenuComponent'
 import { returnMenuColor } from '../../utils/returnMenuColor'
@@ -11,6 +11,12 @@ import ScoreBoard from '../ScoreBoard';
 import TopMenu from '../TopMenu'
 
 export default function Card(props) {
+    useEffect(() => {
+        if (!localStorage.getItem('token')) {
+            props.history.push('/login')
+        }
+    }, [])
+
     return (
         <>
             <TopMenu />
