@@ -26,6 +26,22 @@ const QuestionSchema = new Schema({
         type: String,
         required: true
     },
+    videoURL: {
+        type: String,
+        required: false
+    },
+    imagemURL: {
+        type: String,
+        required: false
+    },
+    imagemGabaritoURL: {
+        type: String,
+        required: false
+    },
+    pontos: {
+        type: Number,
+        required: false
+    },
 });
 
 module.exports = mongoose.model('questions', QuestionSchema);

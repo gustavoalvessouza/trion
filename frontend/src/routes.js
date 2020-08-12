@@ -6,6 +6,12 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import RecoveryPassword from './pages/RecoveryPassword'
+import Dashboard from './pages/Dashboard'
+
+import Questions from './components/Questions'
+import QuestionResult from './components/QuestionResult'
+import QuestionGabarito from './components/QuestionGabarito'
+
 
 export default function Routes() {
     return (
@@ -18,6 +24,12 @@ export default function Routes() {
                     <Route path="/missoes" component={Card} />
                     <Route path="/avisos" component={Card} />
                     <Route path="/recompensas" component={Card} />
+
+                    <Route path="/questions" component={Questions} />
+                    <Route path="/result" component={QuestionResult} />
+                    <Route path="/gabarito" component={QuestionGabarito} />
+
+                    <Route path="/dashboard" component={Dashboard} />
 
                     <Route path="/home" component={Home} />
                     <Route path="/login" component={Login} />

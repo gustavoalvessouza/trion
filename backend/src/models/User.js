@@ -14,6 +14,10 @@ const UserSchema = new Schema({
         type: String,
         require: true,
     },
+    sexo: {
+        type: String,
+        default: 'Masculino'
+    },
     fraqueza: {
         type: String,
         default: 'Nenhuma'

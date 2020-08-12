@@ -17,7 +17,8 @@ class UserController {
         const novoUsuario = {
             nome: req.body.nome,
             email: req.body.email,
-            senha: req.body.senha
+            senha: req.body.senha,
+            sexo: req.body.sexo
         }
 
         await new User(novoUsuario)

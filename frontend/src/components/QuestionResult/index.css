@@ -1,0 +1,16 @@
+.drawing {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.congratulation-text {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title-missao {
+    margin: 0 auto;
+    padding-left: 25px;
+}

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from "react-router-dom";
+
 import './index.css';
 
 import diaria from './diaria.png'
@@ -12,7 +14,7 @@ export default props =>
             <div className="col-12 col-sm-4">
                 <div className="mission d-flex flex-column">
                     <img src={diaria} alt="Missão Diária" height={252} />
-                    <p className="mission-title">Missão Diária</p>
+                    <Link to="/questions" style={{ textDecoration: 'none' }}><p className="mission-title">Missão Diária</p></Link>
                 </div>
             </div>
 

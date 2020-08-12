@@ -1,0 +1,28 @@
+form p {
+    padding-left: 0 !important;
+}
+
+.question-form {
+    margin-top: 80px ;
+}
+
+.question-p {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 100px;
+}
+
+.p2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bt-video {
+    background-color: gray;
+}
+
+.bt-video:hover {
+    cursor: pointer;
+    background-color: #656565;
+}

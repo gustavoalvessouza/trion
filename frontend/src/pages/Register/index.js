@@ -24,7 +24,8 @@ export default function Register(props) {
         await api.post('/user/create', {
             nome,
             email,
-            senha
+            senha,
+            sexo
         })
             .then(_ => {
                 toast.success('Usuário cadastrado com sucesso!')

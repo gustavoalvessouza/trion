@@ -18,21 +18,37 @@ export default function Login(props) {
     const [senha, setSenha] = useState('')
 
     async function signIn() {
-        const response = await api.post('sessions', { email, senha })
+        await api.post('sessions', { email, senha })
+            .then(response => {
+                localStorage.setItem('userNome', response.data.user.nome)
+                localStorage.setItem('userEmail', response.data.user.email)
+                localStorage.setItem('userFraqueza', response.data.user.fraqueza)
+                localStorage.setItem('userHabilidade', response.data.user.habilidade)
+                localStorage.setItem('userPontos', response.data.user.pontos)
+                localStorage.setItem('userNivel', response.data.user.nivel)
+                localStorage.setItem('token', response.data.token)
+                localStorage.setItem('accountType', response.data.user.accountType)
+                localStorage.setItem('userId', response.data.user._id)
 
-        localStorage.setItem('userNome', response.data.user.nome)
-        localStorage.setItem('userEmail', response.data.user.email)
-        localStorage.setItem('userFraqueza', response.data.user.fraqueza)
-        localStorage.setItem('userHabilidade', response.data.user.habilidade)
-        localStorage.setItem('userPontos', response.data.user.pontos)
-        localStorage.setItem('userNivel', response.data.user.nivel)
-        localStorage.setItem('token', response.data.token)
+                toast.success('Login efetuado com sucesso!')
 
-        toast.success('Login efetuado com sucesso!')
-
-        setTimeout(() => {
-            props.history.push('/')
-        }, 2000);
+                setTimeout(() => {
+                    switch (response.data.user.accountType) {
+                        case 'Aluno':
+                            props.history.push('/')
+                            break;
+                        case 'Professor':
+                            props.history.push('/dashboard')
+                            break;
+                        default:
+                            props.history.push('/')
+                            break;
+                    }
+                }, 2000);
+            })
+            .catch(err => {
+                toast.error('Falha ao efetuar login!')
+            })
     }
 
     return (
@@ -53,7 +69,7 @@ export default function Login(props) {
                                 </div>
                             </div>
 
-                            <h1>Aluno</h1>
+                            <h1>Acesso</h1>
 
                             <div className="fields">
                                 <div className="field1">
